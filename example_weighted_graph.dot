@@ -1,0 +1,6 @@
+digraph coef {
+    A_0 -> B_1 [label = 1.337, color = green];
+    B_1 -> C_0 [label = 2.048, color = green];
+    B_1 -> A_0 [label = 1.5, arrowhead = tee, color = red];
+    C_0 -> C_0 -> A_0 [label = 0.42, color = green];
+}

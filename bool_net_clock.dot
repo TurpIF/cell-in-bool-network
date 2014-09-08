@@ -1,0 +1,10 @@
+digraph clock {
+    CLK;
+    clk;
+
+    CLK -> clk  [label = Ton, color = green];
+    CLK -> CLK  [label = Ton, color = red, arrowhead = tee];
+
+    clk -> CLK  [label = Toff, color = green];
+    clk -> clk  [label = Toff, color = red, arrowhead = tee];
+}
